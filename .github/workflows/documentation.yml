@@ -39,6 +39,9 @@ jobs:
           sphinx-build doc _build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
+          path: _build/
 
   # Deployment job
   deploy:
